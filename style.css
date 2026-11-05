@@ -1178,3 +1178,12 @@ footer {
         padding: 25px 20px;
     }
 }
+
+.opomba-seminarska {
+    font-size: 12px;
+    line-height: 1.6;
+    text-align: center;
+    opacity: 0.75;
+    padding: 15px 20px;
+    margin: 0;
+}

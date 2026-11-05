@@ -1,0 +1,1180 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #302020;
+}
+
+header {
+    background-color: #681b32;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    color: #ffd68a;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+
+#domov {
+    min-height: 600px;
+    
+background:
+    linear-gradient(
+        rgba(45, 10, 24, 0.75),
+        rgba(45, 10, 24, 0.85)
+    ),
+    url("images/filmski-vecer.png");
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+}
+
+.hero-content {
+    max-width: 750px;
+    text-align: center;
+}
+
+.hero-label {
+    color: #ffd68a;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+#domov h2 {
+    font-size: clamp(42px, 7vw, 72px);
+    margin: 25px 0;
+}
+
+#domov p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #ffd68a;
+    color: #381020;
+    padding: 16px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background-color: white;
+    transform: translateY(-5px);
+}
+
+
+h2 {
+    font-size: 32px;
+}
+
+footer {
+    background-color: #681b32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+#ponudba {
+    background-color: #fff8f0;
+}
+
+.paketi {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.paket {
+    background-color: white;
+    padding: 35px 25px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.paket:hover {
+    transform: translateY(-10px);
+}
+
+.paket h3 {
+    color: #681b32;
+    font-size: 24px;
+}
+
+.cena {
+    font-size: 32px;
+    font-weight: bold;
+    color: #681b32;
+}
+
+.paket a {
+    display: inline-block;
+    background-color: #681b32;
+    color: white;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.paket a:hover {
+    background-color: #9c3155;
+}
+
+
+#onas {
+    background-color: #fff8f0;
+    padding: 100px 8%;
+}
+
+.onas-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.onas-slika,
+.onas-besedilo {
+    flex: 1;
+    min-width: 0;
+}
+
+
+.onas-slika img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+
+.onas-besedilo {
+    text-align: left;
+}
+
+.section-label {
+    color: #9c3155;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.onas-besedilo h2 {
+    font-size: 42px;
+    color: #681b32;
+    margin: 20px 0;
+}
+
+.onas-besedilo p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #4a3b3b;
+}
+
+.prednosti {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #681b32;
+}
+
+@media (max-width: 768px) {
+    .onas-container {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .onas-besedilo {
+        text-align: center;
+    }
+
+    .onas-besedilo h2 {
+        font-size: 32px;
+    }
+}
+
+
+#kontakt {
+    background-color: #f4d9d1;
+    padding: 100px 20px;
+}
+
+#rezervacija-form {
+    background-color: white;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+#rezervacija-form label {
+    font-weight: bold;
+    color: #681b32;
+}
+
+#rezervacija-form input,
+#rezervacija-form select {
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+}
+
+#rezervacija-form button {
+    background-color: #681b32;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#rezervacija-form button:hover {
+    background-color: #9c3155;
+}
+
+#potrditev {
+    color: #681b32;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.povzetek-cene {
+    background-color: #fff8f0;
+    border: 1px solid #ead6d0;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin: 10px 0;
+}
+
+.povzetek-cene p {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.povzetek-cene strong {
+    color: #681b32;
+    text-align: right;
+}
+
+
+.dodatki {
+    border: 1px solid #ead6d0;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.dodatki legend {
+    font-weight: bold;
+    color: #681b32;
+    padding: 0 8px;
+}
+
+.dodatki label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 15px 0;
+    cursor: pointer;
+    font-weight: normal !important;
+}
+
+#rezervacija-form .dodatki input {
+    width: 18px;
+    height: 18px;
+    accent-color: #681b32;
+    flex-shrink: 0;
+}
+
+
+.potrdilo {
+    background-color: white;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-top: 5px solid #681b32;
+}
+
+.potrdilo[hidden] {
+    display: none;
+}
+
+.potrdilo h3 {
+    color: #681b32;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.potrdilo p {
+    line-height: 1.8;
+}
+
+.potrdilo-cena {
+    border-top: 1px solid #ead6d0;
+    padding-top: 15px;
+    color: #681b32;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.potrdilo-opomba {
+    color: #777;
+    font-size: 13px;
+}
+
+
+/* Prilagoditev za tablice in telefone */
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 15px;
+    }
+
+    #domov {
+        min-height: 500px;
+        padding: 70px 20px;
+    }
+
+    #domov h2 {
+        font-size: 42px;
+    }
+
+    #domov p {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    .paketi {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .paket {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #onas {
+        padding: 60px 20px;
+    }
+
+    .onas-slika img {
+        height: 300px;
+    }
+
+    #kontakt {
+        padding: 60px 15px;
+    }
+
+    #rezervacija-form {
+        padding: 25px 20px;
+    }
+
+    .potrdilo {
+        padding: 25px 20px;
+    }
+}
+
+/* ==================================
+   NAŠA PONUDBA – STORITVE IN IZDELKI
+================================== */
+
+#storitve {
+    background-color: #fff8f0;
+    padding: 90px 8%;
+}
+
+#storitve h2 {
+    color: #681b32;
+    font-size: 38px;
+    margin: 20px 0;
+}
+
+#storitve > p {
+    color: #4a3b3b;
+    font-size: 18px;
+}
+
+.storitve-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1300px;
+    margin: 50px auto 0;
+}
+
+.storitev-kartica {
+    background-color: white;
+    border-radius: 20px;
+    padding: 35px 22px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.storitev-kartica:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 30px rgba(104,27,50,0.15);
+}
+
+.storitev-ikona {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.storitev-kartica h3 {
+    color: #681b32;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.storitev-kartica > p:not(.storitev-cena) {
+    color: #4a3b3b;
+    line-height: 1.7;
+}
+
+.storitev-cena {
+    font-size: 23px;
+    font-weight: bold;
+    color: #681b32;
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+.storitev-gumb {
+    display: inline-block;
+    background-color: #681b32;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.storitev-gumb:hover {
+    background-color: #9c3155;
+}
+
+.storitev-oznaka {
+    background-color: #f4d9d1;
+    color: #681b32;
+    padding: 12px 22px;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+/* Tablice */
+@media (max-width: 1100px) {
+    .storitve-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Telefoni */
+@media (max-width: 600px) {
+    #storitve {
+        padding: 60px 20px;
+    }
+
+    #storitve h2 {
+        font-size: 30px;
+    }
+
+    .storitve-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* KINO POD ZVEZDAMI */
+
+#kino-pod-zvezdami {
+    background-color: #f4d9d1;
+    padding: 100px 8%;
+}
+
+.zvezde-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.zvezde-besedilo,
+.zvezde-slika {
+    flex: 1;
+    min-width: 0;
+}
+
+.zvezde-besedilo {
+    text-align: left;
+}
+
+.zvezde-besedilo h2 {
+    color: #681b32;
+    font-size: 40px;
+}
+
+.zvezde-besedilo p {
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.zvezde-seznam {
+    list-style: none;
+    padding: 0;
+    line-height: 2.2;
+}
+
+.zvezde-cena {
+    color: #681b32;
+    font-size: 28px !important;
+    font-weight: bold;
+}
+
+.zvezde-gumb {
+    display: inline-block;
+    background-color: #681b32;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.zvezde-gumb:hover {
+    background-color: #9c3155;
+}
+
+.zvezde-slika img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* Mobilna različica */
+
+@media (max-width: 768px) {
+    #kino-pod-zvezdami {
+        padding: 60px 20px;
+    }
+
+    .zvezde-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .zvezde-besedilo {
+        text-align: center;
+    }
+
+    .zvezde-besedilo h2 {
+        font-size: 30px;
+    }
+
+    .zvezde-slika {
+        width: 100%;
+    }
+
+    .zvezde-slika img {
+        height: 300px;
+    }
+}
+
+
+/* FILMSKA ZABAVA */
+
+#filmska-zabava {
+    background-color: #fff8f0;
+    padding: 100px 8%;
+}
+
+.zabava-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.zabava-slika,
+.zabava-besedilo {
+    flex: 1;
+    min-width: 0;
+}
+
+.zabava-slika img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.zabava-besedilo {
+    text-align: left;
+}
+
+.zabava-besedilo h2 {
+    color: #681b32;
+    font-size: 40px;
+}
+
+.zabava-besedilo p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.zabava-seznam {
+    list-style: none;
+    padding: 0;
+    line-height: 2.2;
+}
+
+.zabava-cena {
+    color: #681b32;
+    font-size: 28px !important;
+    font-weight: bold;
+}
+
+.zabava-gumb {
+    display: inline-block;
+    background-color: #681b32;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.zabava-gumb:hover {
+    background-color: #9c3155;
+}
+
+/* Mobilna različica */
+
+@media (max-width: 768px) {
+    #filmska-zabava {
+        padding: 60px 20px;
+    }
+
+    .zabava-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .zabava-besedilo {
+        text-align: center;
+    }
+
+    .zabava-besedilo h2 {
+        font-size: 30px;
+    }
+
+    .zabava-slika {
+        width: 100%;
+    }
+
+    .zabava-slika img {
+        height: 300px;
+    }
+}
+
+
+/* FILMSKI IZZIVI – VELIKOST KARTIC */
+
+.kartica-prostor {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.filmska-kartica {
+    width: 220px;
+    aspect-ratio: 63 / 88;
+}
+
+.kartica-notranjost {
+    width: 100%;
+    height: 100%;
+}
+
+.kartica-stran {
+    width: 100%;
+    height: 100%;
+}
+
+.kartica-stran img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 12px;
+}
+
+/* Manjše kartice na telefonu */
+
+@media (max-width: 600px) {
+    .filmska-kartica {
+        width: 180px;
+    }
+}
+
+
+/* FILMSKE KARTICE – ENA ZRAVEN DRUGE */
+
+.kartica-notranjost {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    width: 100%;
+    height: auto;
+}
+
+.filmska-kartica {
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+}
+
+.kartica-stran {
+    width: 220px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.kartica-stran img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+/* Mobilna različica */
+
+@media (max-width: 600px) {
+    .kartica-notranjost {
+        gap: 12px;
+    }
+
+    .kartica-stran {
+        width: min(42vw, 170px);
+    }
+}
+
+
+/* GUMB ZA FILMSKE IZZIVE */
+
+.izzivi-gumb {
+    background-color: #681b32;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.izzivi-gumb:hover {
+    background-color: #9c3155;
+    transform: translateY(-3px);
+}
+
+#izzivi-stevec {
+    color: #681b32;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+/* CELOTEN RAZDELEK FILMSKI IZZIVI */
+
+#filmski-izzivi {
+    background-color: #fff8f0;
+    padding: 90px 5%;
+}
+
+#filmski-izzivi h2 {
+    color: #681b32;
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.izzivi-uvod {
+    max-width: 650px;
+    margin: 0 auto 45px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.izzivi-container {
+    max-width: 1300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 35px;
+    align-items: center;
+}
+
+.izzivi-opis,
+.izzivi-igra {
+    background-color: white;
+    border-radius: 20px;
+    padding: 35px 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.izzivi-opis {
+    text-align: left;
+}
+
+.izzivi-opis h3,
+.izzivi-igra h3 {
+    color: #681b32;
+    font-size: 24px;
+}
+
+.izzivi-opis p {
+    line-height: 1.8;
+}
+
+.izzivi-opis ul {
+    list-style: none;
+    padding: 0;
+    line-height: 2.2;
+}
+
+.izzivi-cena {
+    color: #681b32;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.izzivi-opomba {
+    font-size: 13px;
+    color: #777;
+}
+
+.izzivi-igra {
+    text-align: center;
+    min-width: 0;
+}
+
+.izzivi-igra .kartica-notranjost {
+    justify-content: center;
+}
+
+/* TABLICE */
+
+@media (max-width: 1100px) {
+    .izzivi-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* TELEFONI */
+
+@media (max-width: 600px) {
+    #filmski-izzivi {
+        padding: 60px 15px;
+    }
+
+    #filmski-izzivi h2 {
+        font-size: 30px;
+    }
+
+    .izzivi-opis,
+    .izzivi-igra {
+        padding: 25px 15px;
+    }
+
+    .izzivi-igra .kartica-stran {
+        width: min(36vw, 150px);
+    }
+
+    .izzivi-igra .kartica-notranjost {
+        gap: 10px;
+    }
+}
+
+
+/* NAROČANJE FILMSKIH KARTIC */
+
+.naroci-kartice-gumb {
+    display: inline-block;
+    background-color: #681b32;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.naroci-kartice-gumb:hover {
+    background-color: #9c3155;
+}
+
+#narocilo-kartic {
+    background-color: #f4d9d1;
+    padding: 80px 20px;
+}
+
+#narocilo-kartic h2 {
+    color: #681b32;
+}
+
+#narocilo-form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+#narocilo-form label {
+    color: #681b32;
+    font-weight: bold;
+}
+
+#narocilo-form input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.narocilo-povzetek {
+    background: #fff8f0;
+    border-radius: 12px;
+    padding: 15px 20px;
+}
+
+.narocilo-povzetek p {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+#narocilo-form button {
+    background-color: #681b32;
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#narocilo-form button:hover {
+    background-color: #9c3155;
+}
+
+#narocilo-potrditev[hidden] {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #narocilo-form {
+        padding: 25px 20px;
+    }
+}
+
+
+/* MNENJA OBISKOVALCEV */
+
+#mnenja {
+    padding: 80px 20px;
+    background-color: #fff8f0;
+    text-align: center;
+}
+
+#mnenja h2 {
+    color: #681b32;
+    font-size: 38px;
+}
+
+.mnenja-uvod {
+    margin: 20px auto 40px;
+    max-width: 600px;
+    line-height: 1.7;
+}
+
+#seznam-mnenj {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    display: grid;
+    gap: 20px;
+}
+
+.mnenje-kartica {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    text-align: left;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+}
+
+.mnenje-kartica h3 {
+    color: #681b32;
+    margin-bottom: 10px;
+}
+
+.mnenje-zvezdice {
+    color: #d49a24;
+    margin-bottom: 12px;
+}
+
+#mnenja-form {
+    max-width: 550px;
+    margin: auto;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+#mnenja-form h3 {
+    color: #681b32;
+}
+
+#mnenja-form label {
+    font-weight: bold;
+    color: #681b32;
+}
+
+#mnenja-form input,
+#mnenja-form select,
+#mnenja-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    font: inherit;
+}
+
+#mnenja-form button {
+    background: #681b32;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#mnenja-form button:hover {
+    background: #9c3155;
+}
+
+.mnenja-opomba {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #777;
+}
+
+@media (max-width: 600px) {
+    #mnenja h2 {
+        font-size: 30px;
+    }
+
+    #mnenja-form {
+        padding: 25px 20px;
+    }
+}
